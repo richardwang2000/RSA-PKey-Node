@@ -7,6 +7,7 @@ This allows you to use the modulus/exponent values for validating signed value.
 
 The original code is based on the answer to [this stackoverflow question](http://stackoverflow.com/questions/18835132/xml-to-pem-in-node-js).
 
+This function composes a ASN.1 DER structure in hex, then hex-decodes it, then base64-encodes it, and then sandwiches it between -----BEGIN PRIVATE KEY----- and -----END PRIVATE KEY-----. After all, that's all a PEM is.
 
 ## Install ##
 ```
